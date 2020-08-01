@@ -1,0 +1,153 @@
+@import "../../variable.scss";
+.top-nav-bar {
+
+    width: 100%;
+    background-image: linear-gradient(to right, #0010ff, #002ffa, #0040f4, #004cec, #0057e3, #2263e2, #376fe0, #497ade, #608be5, #769deb, #8caef1, #a2c0f7);
+    font-family: 'Open Sans,Regular';
+    height: 65px;
+    padding: 20px 50px 20px 50px;
+    .nav-items {
+      display: flex;
+      flex-direction: row;
+      width: 100%;
+      font-family: 'OpenSans-Bold';
+      color: $font;
+      font-size: 14px;
+      .logo {
+        cursor: pointer;
+        .logo-long {
+          margin-left: 13px;
+          width: 40px;
+          cursor: pointer;
+        }
+      }
+      .quick-menu {
+        margin-left: auto;
+        ul {
+          display: flex;
+          list-style: none;
+          li {
+            margin: 0px 17px;
+            cursor: pointer;
+          }
+        }
+      }
+    }
+  }
+  .nav-menu {
+    ul {
+      list-style: none;
+      display: flex;
+      justify-content: flex-start;
+      padding-top: 15px;
+      font-size: 14px;
+      font-family: 'OpenSans-Bold';
+      padding-left: 91px;
+      li {
+        padding: 0 12px 15px;
+        cursor: pointer;
+        outline: none;
+        a {
+          color: $white;
+          text-decoration: none;
+          border-bottom: 3px solid $knblue;
+          padding-bottom: 16px;
+          &.active {
+            border-bottom: 3px solid $knblue;
+            opacity: 1;
+          }
+        }
+      }
+    }
+  }
+  .hide {
+    display: none;
+    visibility: hidden;
+  }
+  .active {
+    border-bottom: 3px solid $knblue;
+    opacity: 1;
+    color: $white;
+  }
+  .border-nav{
+    border-bottom: 3px solid $knblue;
+  }
+  
+  .py-3:focus {
+    outline: none !important;
+  }
+  
+  /* Menu Block */
+  .menu-blk{
+    color:$white;
+    z-index: 99;
+    .each-menu span {
+      padding: 10px 0 5px 0;
+    }
+    .each-menu span.active{
+      border-bottom: none;
+      font-weight: bold;
+      a{
+        font-family: 'OpenSans-Bold' !important;
+      }
+    } 
+    span.active .item-menu{ 
+      position: relative;
+      &:after{
+        position: absolute;
+        content: "";
+        background-color: $knblue;
+        height: 3px;
+        width: 45px;
+        display: block;
+        margin: auto;
+        left: 0;
+        right: 0;
+        top: 34px;
+        border-top-left-radius: 5px;
+        border-top-right-radius: 5px;
+      }
+     }
+     .each-menu {
+      span.item-menu:hover{
+        position: relative;
+        transition: all 0.2s cubic-bezier(0, 0.63, 0.58, 1);
+        color: $knnavi;
+        transition: all 0.2s ease-in;
+        &:after{
+          position: absolute;
+          content: "";
+          background-color: $knblue;
+          height: 3px;
+          width: 45px;
+          display: block;
+          margin: auto;
+          left: 0;
+          right: 0;
+          top: 33px;
+          border-top-left-radius: 5px;
+          border-top-right-radius: 5px;
+        }
+      }
+     }
+    .each-menu {
+      position: relative;
+      margin: 0 60px 0 0;
+      a{
+        font-size: 11.5px;
+        font-family: 'OpenSans-Regular';
+        font-weight: normal;
+        color: $menu;
+        line-height: 15px;
+      }
+    }
+  } 
+
+.quick-menu{
+  .logout-btn{
+    font-size: 11.5px !important;
+    font-family: "OpenSans-Regular";
+    font-weight: normal;
+    color: $white;
+  }
+}

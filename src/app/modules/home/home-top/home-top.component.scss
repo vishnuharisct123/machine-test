@@ -1,0 +1,26 @@
+@import "../../../variable.scss";
+.home-top
+{
+    padding: 50px 50px;
+    background-image: linear-gradient(to right, #0010ff, #002ffa, #0040f4, #004cec, #0057e3, #2263e2, #376fe0, #497ade, #608be5, #769deb, #8caef1, #a2c0f7);
+  .header-sty
+  {
+    font-size: fontsize(fsize32);
+    font-family: 'OpenSans-Bold';
+    color: $white;
+  }
+  .data-sty
+  {
+    font-size: fontsize(fsize16);
+    font-family: "OpenSans-SemiBold";
+    color: $white;  
+  }
+  .mouse
+  {
+    position: absolute;
+    bottom: -11px;
+    left: 50%;
+    right: 0;
+    background: red;
+  }
+}

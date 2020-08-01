@@ -1,0 +1,44 @@
+@import "../../../variable.scss";
+
+.login-page-wrapper {
+  height: calc(100vh);
+  display: table;
+  table-layout: fixed;
+  width: 100%;
+  .log-wrapper {
+    display: table-cell;
+    width: 100%;
+    vertical-align: middle;
+    background-image: url("/assets/images/background.jpg");
+    height: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    .log-box {
+      position: absolute;
+      left: 50%;
+      top: 50%;
+      transform: translate(-50%, -50%);
+      width: 400px;
+      height: 435px;
+      background: $white;
+      border-radius: 12px;
+      .logo {
+        h4 {
+          font-family: "OpenSans-SemiBold";
+          font-size: fontsize(fsize20);
+          color: $knnavi;
+        }
+        span {
+          font-family: "OpenSans-Regular";
+          font-size: fontsize(fsize20);
+          color: $knnavi;
+        }
+      }
+      img.logo {
+        border-radius: 40px;
+        height: 50px; 
+      }
+    }
+  }
+}
